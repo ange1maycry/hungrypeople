@@ -13,7 +13,7 @@ html {
 .header {
     position: relative;
 }
-.container {
+.container { 
     max-width: 1285px;
     width: 100%;
     margin: auto;
@@ -28,11 +28,15 @@ html {
     text-transform: uppercase;
     text-decoration: none;
 }
+.nav__link:hover {
+    color: bisque;
+}
 .header__nav {
-    max-width: 532px;
+    max-width: 732px;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    text-align: center;
     margin-top: -70px;
 }
 .header__logo {
@@ -40,10 +44,9 @@ html {
 }
 .section__hero {
     margin-top: -180px;
+    padding-bottom: 100px;
     font-family: 'Open Sans', sans-serif;
     background: url(../img/header-bg.jpg) no-repeat center / cover;
-    width: auto;
-    height: 800px;
 }
 .hero__block {
     color: #ffffff;
@@ -164,7 +167,7 @@ html {
 }
 .text__desc {
     padding-top: 20px;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 28px;
 }
 .section__img {
@@ -226,6 +229,7 @@ html {
     margin-top: 10px;
     margin-right: 5px;
     padding-left: 20px;
+    padding-right: 20px;
     margin-bottom: 20px;
 }
 .section__form__message {
@@ -251,6 +255,7 @@ html {
     cursor: pointer;
 }
 .section__subtitle {
+    padding-top: 50px;
     color: rgba(51, 51, 51, 0.5);
     font-size: 12px;
     line-height: 12px;
@@ -316,12 +321,13 @@ html {
 .photo__galerie {
     max-width: 1920px;
     width: 100%;
+    margin: auto;
 }
 .galerie__img {
-    max-width: 475px;
+    max-width: 478px;
     width: 100%;
     margin: auto;
-    margin-right: -4px;
+    margin-right: -7px;
 }
 .section__contact {
     padding-top: 100px;
@@ -334,6 +340,8 @@ html {
     max-width: 420px;
     width: 100%;
     margin: auto;
+    margin-bottom: 20px;
+    margin-right: 5px;
 }
 .contacts__group {
     padding-top: 10px;
@@ -362,4 +370,32 @@ html {
 .footer__title {
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
+}
+@media screen and (max-width: 1440px) {
+    .photo__galerie {
+        display: none;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .container {
+        max-width: 750px;
+        width: 100%;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 450px) {
+    .container {
+        max-width: 400px;
+        width: 100%;
+        margin: auto;
+    }
+    .nav__link {
+        display: none;
+    }
+    .section__img {
+        display: none;
+    }
+    .photo__galerie {
+        display: none;
+    }
 }
