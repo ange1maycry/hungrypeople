@@ -5,7 +5,7 @@
 }
 @font-face {
     font-family: 'Banny';
-    src: url(../fonts/Banny-LightRound.woff) format(woff);
+    src: url(../fonts/Banny-LightRound.woff);
 }
 html {
     font-family: 'Open Sans', sans-serif;
@@ -45,16 +45,10 @@ html {
     width: auto;
     height: 800px;
 }
-.hero__group {
-    display: flex;
-}
-.hero__block__left {
-    color: #FFFFFF;
-    transform: rotate(-90deg);
-}
 .hero__block {
     color: #ffffff;
     padding-top: 364px;
+    text-align: center;
 }
 .hero_subtitle {
     text-transform: uppercase;
@@ -129,22 +123,6 @@ html {
     cursor: pointer;
     border-radius: 20px;
 }
-.social__buttons__group {
-    margin-left: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.social__link {
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    width: 60px;
-    height: 60px;
-    border-radius: 50px;
-}
-.social__img {
-    width: 40px;
-    height: 40px;
-}
 .section__about {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -189,6 +167,11 @@ html {
     font-size: 18px;
     line-height: 28px;
 }
+.section__img {
+    max-width: 575px;
+    width: 100%;
+    margin: auto;
+}
 .section__master {
     padding-top: 50px;
     padding-bottom: 100px;
@@ -232,7 +215,9 @@ html {
     text-transform: uppercase;
 }
 .section__form {
-    width: 277px;
+    max-width: 277px;
+    width: 100%;
+    margin: auto;
     height: 60px;
     background: #E5E5E5;
     border-radius: 5px;
@@ -241,15 +226,19 @@ html {
     margin-top: 10px;
     margin-right: 5px;
     padding-left: 20px;
+    margin-bottom: 20px;
 }
 .section__form__message {
-    width: 1280px;
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
     height: 120px;
     padding-bottom: 60px;
 }
 .button__book {
-    margin-top: 10px;
-    width: 565px;
+    max-width: 565px;
+    width: 100%;
+    margin: auto;
     height: 60px;
     background: #E8C300;
     border-radius: 5px;
@@ -325,11 +314,13 @@ html {
     color: rgba(255, 255, 255, 0.5);
 }
 .photo__galerie {
-    max-width: 1900px;
+    max-width: 1920px;
     width: 100%;
 }
 .galerie__img {
-    width: 475px;
+    max-width: 475px;
+    width: 100%;
+    margin: auto;
     margin-right: -4px;
 }
 .section__contact {
@@ -340,7 +331,9 @@ html {
     padding-top: 50px;
 }
 .section__form__contact {
-    width: 420px;
+    max-width: 420px;
+    width: 100%;
+    margin: auto;
 }
 .contacts__group {
     padding-top: 10px;
