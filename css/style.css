@@ -392,6 +392,9 @@ html {
     .nav__link {
         display: none;
     }
+    .hero__block {
+        padding-top: 200px;
+    }
     .section__img {
         display: none;
     }
